@@ -337,15 +337,20 @@ body {
   transition: 0.3s ease 0s;
 }
 
-.menu__link_gitLab {
+.menu__link_github {
   font-weight: 600;
-  color: rgb(235, 91, 13);
 }
 
-.no-webp .menu__link_gitLab::before{
-  background: url("../img/logotip/GitLab.png") 50%/cover no-repeat; }
+.menu__link.menu__link_github {
+  font-weight: 600;
+}
+.menu__link.menu__link_github::before{
+  background: url("../img/github.png") 10%/cover no-repeat;
+  background-size: 24px 24px;
+}
 
-.menu__link_gitLab::before {
+
+.menu__link_github::before {
   content: "";
   position: absolute;
   top: -15px;
@@ -1274,11 +1279,11 @@ body {
     color: #fff;
   }
 
-  .menu__link_gitLab::before {
+  .menu__link_github::before {
     right: -100px;
   }
 
-  .menu__link_gitLab {
+  .menu__link_github {
     font-size: 1.875rem;
     color: rgb(109, 53, 23);
   }
@@ -1426,11 +1431,11 @@ body {
     color: #ee4248;
   }
 
-  .menu__link_gitLab:hover {
+  .menu__link_github:hover {
     color: #02897a;
   }
 
-  .menu__link_gitLab:hover::before {
+  .menu__link_github:hover::before {
     -webkit-transform: scale(1.08);
         -ms-transform: scale(1.08);
             transform: scale(1.08);
@@ -1460,5 +1465,3 @@ body {
     color: #ee4248;
   }
 }
-
-.webp .menu__link_gitLab::before{ background: url(../img/logotip/GitLab.webp) 50%/cover no-repeat; }
