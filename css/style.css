@@ -726,8 +726,9 @@ h6 {
           column-gap: 40px;
   row-gap: 25px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: start;
 }
 
 .roadMap__items_left {
