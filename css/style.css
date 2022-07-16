@@ -385,7 +385,7 @@ h6 {
 .footer__container {
   display: -ms-grid;
   display: grid;
-  row-gap: 15px;
+  row-gap: 10px;
 }
 
 .footer-contacts__title {
@@ -461,10 +461,9 @@ h6 {
 }
 
 .social-footer__content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50px)[3];
-  grid-template-columns: repeat(3, 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
@@ -474,36 +473,30 @@ h6 {
 }
 
 .social-footer__link:first-child::before {
-  font-size: 50px;
+  font-size: 30px;
   color: rgb(212, 14, 14);
 }
 
 .social-footer__link:nth-child(2)::before {
-  font-size: 50px;
+  font-size: 30px;
   color: rgb(20, 90, 152);
 }
 
 .social-footer__link:nth-child(3)::before {
-  -webkit-transform: translate(-15%, 0);
-      -ms-transform: translate(-15%, 0);
-          transform: translate(-15%, 0);
-  font-size: 75px;
+  font-size: 50px;
   color: rgb(33, 130, 216);
 }
 
 .social-footer__link:nth-child(4)::before {
-  -webkit-transform: translate(-10%, -20%);
-      -ms-transform: translate(-10%, -20%);
-          transform: translate(-10%, -20%);
-  font-size: 60px;
+  -webkit-transform: translate(0%, -10%);
+      -ms-transform: translate(0%, -10%);
+          transform: translate(0%, -10%);
+  font-size: 40px;
   color: rgb(0, 0, 0);
 }
 
 .social-footer__link:nth-child(5)::before {
-  -webkit-transform: translate(25%, -20%);
-      -ms-transform: translate(25%, -20%);
-          transform: translate(25%, -20%);
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(2, 110, 219);
   font-weight: 100;
 }
@@ -724,17 +717,19 @@ h6 {
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;
-  row-gap: 25px;
+  row-gap: 35px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  align-items: start;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .roadMap__items_left {
   display: -ms-grid;
   display: grid;
-  row-gap: 25px;
+  row-gap: 35px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -743,7 +738,7 @@ h6 {
 .roadMap__items_right {
   display: -ms-grid;
   display: grid;
-  row-gap: 25px;
+  row-gap: 35px;
 }
 
 .roadMap__item {
@@ -774,7 +769,7 @@ h6 {
 }
 
 .item-roadMap__title:not(:last-child) {
-  margin-bottom: 0.8125rem;
+  margin-bottom: 1.5625rem;
 }
 
 .item-roadMap__version {
@@ -888,7 +883,11 @@ h6 {
   }
 
   .social-footer__title:not(:last-child) {
-    margin-bottom: 0.3125rem;
+    margin-bottom: 1.125rem;
+  }
+
+  .social-footer__content {
+    margin-left: -10%;
   }
 
   .donate-footer__title:not(:last-child) {
